@@ -4,19 +4,42 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+}
+
+/* 🌟 Header */
+header {
+  text-align: center;
+  background: #3498db;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* 🧾 Formulario principal */
 form {
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px; /* se une con header suavemente */
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  width: 120%;
+  width: 100%;
   max-width: 700px;
-  margin: 40px auto;
+  margin: 0; /* ya no necesita margen arriba */
   padding: 30px 40px;
   box-sizing: border-box;
 }
@@ -50,7 +73,8 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-select {
+select,
+textarea {
   width: 100%;
   padding: 8px 10px;
   margin-top: 5px;
@@ -92,4 +116,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2980b9;
   transform: scale(1.03);
+}
+
+/* 🌟 Footer */
+footer {
+  text-align: center;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
 }

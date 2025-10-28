@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/validate.js"></script>
-    <title>Formulario Sociométrico</title>
-</head>
-<body>
-
 <?php
 session_start();
 include 'includes/functions.php';
@@ -20,6 +9,19 @@ $old = $_SESSION['old'] ?? [];
 // limpiar para que no se repitan al recargar
 unset($_SESSION['errors'], $_SESSION['old']);
 ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/validate.js" defer></script>
+    <title>Formulario Sociométrico</title>
+</head>
+<body>
+
+<?php include 'includes/header.php'; ?>
+
 
 <form method="POST" action="process.php">
 
@@ -210,6 +212,8 @@ unset($_SESSION['errors'], $_SESSION['old']);
 </form>
 
 
+
+<?php include 'includes/footer.php'; ?>
 
 </body>
 </html>
