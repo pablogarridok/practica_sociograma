@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf4);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* 🧾 Formulario principal */
+form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 120%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+/* 🔹 Títulos de cada bloque */
+legend {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+/* 🧩 Agrupaciones de campos */
+fieldset {
+  border: 2px solid #d6dee6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: #f9fbfd;
+}
+
+/* 🏷️ Labels */
+label {
+  display: inline-block;
+  margin-top: 10px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+/* ✏️ Inputs, selects y rangos */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccd6dd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 🔘 Radio buttons */
+input[type="radio"] {
+  margin: 8px 5px 8px 0;
+}
+
+input[type="radio"] + label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* 🚀 Botón enviar */
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: block;
+  margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}
